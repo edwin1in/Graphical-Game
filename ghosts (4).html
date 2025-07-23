@@ -6,10 +6,10 @@
 
 <meta charset="UTF-8">
 
-<title>         Where am I?{pg}Why can't I remember anything?{pg}           {shk}Who am I?{/shk}{pg}{exit "0" 4 7 "fade_b"}</title>
+<title>Ghosts</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-         Where am I?{pg}Why can't I remember anything?{pg}           {shk}Who am I?{/shk}{pg}{exit "0" 4 7 "fade_b"}
+Ghosts
 
 # BITSY VERSION 8.14
 
@@ -31,11 +31,17 @@ PAL 0
 110,85,65
 153,35,29
 247,204,12
-128,69,27
+126,68,25
 0,100,0
 122,128,115
 73,84,71
-125,99,79
+138,107,84
+158,134,114
+255,225,0
+110,85,65
+36,34,31
+62,128,36
+158,192,247
 NAME mansion
 
 PAL 1
@@ -61,6 +67,12 @@ PAL 2
 122,128,115
 73,84,71
 125,99,79
+158,134,114
+255,225,0
+255,255,255
+36,34,31
+62,128,36
+158,192,247
 NAME outdoors
 
 PAL 3
@@ -81,6 +93,11 @@ PAL 3
 46,53,44
 80,63,50
 158,134,114
+255,225,0
+255,255,255
+36,34,31
+62,128,36
+158,192,247
 NAME cellar
 
 ROOM 0
@@ -95,23 +112,23 @@ s,s,s,l,19,1f,0,0,0,0,19,19,l,s,s,s
 s,s,s,l,0,0,0,0,0,0,0,0,l,s,s,s
 s,s,s,l,0,0,0,0,0,0,0,0,l,s,s,s
 s,s,s,l,0,0,0,0,0,0,0,0,l,s,s,s
-s,s,s,l,0,0,0,x,y,0,0,0,l,s,s,s
-s,s,s,l,l,l,z,d,e,10,l,l,l,s,s,s
-s,s,s,n,b,b,t,k,j,1g,b,b,p,s,s,s
-s,s,s,m,c,c,v,f,g,w,c,c,o,s,s,s
+s,s,s,l,0,x,y,0,0,0,0,0,l,s,s,s
+s,s,s,l,z,d,e,10,l,l,l,l,l,s,s,s
+s,s,s,n,t,k,j,1g,b,b,b,b,p,s,s,s
+s,s,s,m,v,f,g,w,c,c,c,c,o,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 NAME player room
 ITM 2 10,4
 ITM 2 5,4
 ITM 3 10,3
 ITM 3 5,3
-ITM 4 7,12
-ITM 5 8,12
 ITM 1k 8,6
 ITM i 6,5
 ITM j 6,4
-EXT 7,12 2 3,6
-EXT 8,12 2 4,6
+ITM 5 6,12
+ITM 4 5,12
+EXT 5,12 2 3,6
+EXT 6,12 2 4,6
 PAL 0
 TUNE 2
 
@@ -139,16 +156,16 @@ ROOM 2
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
-l,l,z,d,e,10,l,l,l,l,z,d,e,10,l,l
-b,b,t,k,j,1g,b,b,b,b,t,k,j,u,b,b
-c,c,v,f,g,w,c,c,c,c,v,f,g,w,c,c
-0,0,0,0,0,0,0,0,0,0,1t,0,0,1t,0,0
-0,0,0,0,0,0,0,0,0,0,39,0,0,39,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c
+s,l,z,d,e,10,l,l,l,l,z,d,e,10,l,l
+s,l,t,k,j,1g,b,b,b,b,t,k,j,u,b,b
+s,l,v,f,g,w,c,c,c,c,v,f,g,w,c,c
+s,l,0,0,0,0,0,0,0,0,1t,0,0,1t,0,0
+s,l,0,0,0,0,0,0,0,0,39,0,0,39,0,0
+s,l,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+s,l,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+s,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
+s,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
+s,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
@@ -165,8 +182,8 @@ ITM i 10,6
 ITM j 10,5
 ITM j 13,5
 ITM i 13,6
-EXT 3,5 0 7,11
-EXT 4,5 0 8,11
+EXT 3,5 0 5,11
+EXT 4,5 0 6,11
 EXT 15,6 5 0,6
 EXT 15,7 5 0,7
 EXT 15,8 5 0,8
@@ -318,16 +335,14 @@ c,c,c,c,c,c,c,v,f,g,w,c,b,b,s,s
 0,0,0,0,0,0,0,0,0,0,0,0,26,b,l,s
 0,0,0,0,0,0,0,0,0,0,0,0,0,26,l,s
 0,0,0,0,0,0,0,0,0,0,0,0,0,23,p,s
-0,0,0,0,0,0,0,0,x,y,0,0,23,b,p,s
-l,l,l,l,l,l,l,z,d,e,10,l,b,b,28,s
-b,b,b,b,b,b,b,t,k,j,u,b,b,28,s,s
-c,c,c,c,c,c,c,v,f,g,w,c,28,s,s,s
+0,0,0,0,0,0,0,0,0,0,0,0,23,b,p,s
+l,l,3b,l,l,l,3b,l,l,l,3b,l,b,b,28,s
+b,b,30,b,b,b,30,b,b,b,30,b,b,28,s,s
+c,c,2z,c,c,c,2z,c,c,c,2z,c,28,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
 NAME hallway 2
-ITM 4 8,10
-ITM 5 9,10
 ITM 6 8,2
 ITM 4 8,3
 ITM 5 9,3
@@ -349,19 +364,25 @@ ITM 11 13,11
 ITM 11 14,10
 ITM 12 12,11
 ITM 12 13,10
+ITM 1b 10,11
+ITM 1b 6,11
+ITM 1b 2,11
 EXT 0,6 5 15,6
 EXT 0,7 5 15,7
 EXT 0,8 5 15,8
 EXT 0,9 5 15,9
+EXT 2,10 f 7,7
+EXT 10,10 h 7,7
+EXT 6,10 g 7,7
 PAL 0
 
 ROOM 7
-s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
-s,s,s,s,s,s,l,l,l,l,s,s,s,s,s,s
-s,s,s,s,s,b,b,1k,1l,b,b,s,s,s,s,s
-s,s,s,s,b,b,c,1h,1i,c,b,b,s,s,s,s
+s,s,s,s,s,s,3t,3s,3s,3u,s,s,s,s,s,s
+s,s,s,s,s,s,l,3q,3r,l,s,s,s,s,s,s
+s,s,s,s,s,b,3m,3o,3p,3n,b,s,s,s,s,s
+s,s,s,s,b,b,3k,3j,3j,3l,b,b,s,s,s,s
 s,s,s,b,b,27,0,0,0,0,26,b,b,s,s,s
-s,s,l,b,27,0,0,0,0,0,0,26,b,l,s,s
+s,s,l,b,27,0,37,0,0,38,0,26,b,l,s,s
 s,s,l,27,1q,1n,1p,1p,1p,1p,1o,1r,26,l,s,s
 s,s,l,0,1q,1n,1p,1p,1p,1p,1o,1r,0,l,s,s
 s,s,l,0,1q,1n,1p,1p,1p,1p,1o,1r,0,l,s,s
@@ -423,10 +444,22 @@ ITM 12 5,3
 ITM 12 4,4
 ITM 12 3,5
 ITM 11 3,6
-ITM b 7,2
-ITM c 8,2
-ITM 8 7,3
-ITM 9 8,3
+ITM 1s 6,0
+ITM 1t 7,0
+ITM 1v 9,0
+ITM 1u 8,0
+ITM 1w 7,3
+ITM 1x 8,3
+ITM 1y 7,2
+ITM 20 7,1
+ITM 21 8,1
+ITM 1z 8,2
+ITM 22 6,3
+ITM 23 9,3
+ITM 24 6,1
+ITM 25 9,1
+ITM 1k 6,5
+ITM 1l 9,5
 EXT 8,12 6 9,6
 EXT 7,12 6 8,6
 PAL 0
@@ -623,6 +656,7 @@ ITM j 8,3
 ITM j 10,3
 ITM i 8,4
 ITM i 10,4
+ITM 26 8,8
 EXT 15,4 9 0,4
 EXT 15,5 9 0,5
 EXT 15,6 9 0,6
@@ -696,6 +730,7 @@ ITM 18 12,11
 ITM 18 12,12
 ITM 19 12,13
 ITM 1a 12,14
+ITM 27 8,9
 EXT 0,4 9 15,4
 EXT 0,5 9 15,5
 EXT 0,6 9 15,6
@@ -831,6 +866,73 @@ ITM 1q 7,2
 EXT 7,6 d 9,6
 PAL 3
 
+ROOM f
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,l,b,b,30,b,b,l,s,s,s,s,s
+s,s,s,s,l,c,c,2z,c,c,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,n,b,b,b,b,b,p,s,s,s,s,s
+s,s,s,s,m,c,c,c,c,c,o,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+NAME closet 1
+ITM 1b 7,5
+ITM 28 5,8
+EXT 7,6 6 2,9
+PAL 3
+
+ROOM g
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,l,b,b,30,b,b,l,s,s,s,s,s
+s,s,s,s,l,c,c,2z,c,c,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,3h,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,n,b,b,b,b,b,p,s,s,s,s,s
+s,s,s,s,m,c,c,c,c,c,o,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+NAME closet 2
+ITM 1b 7,5
+EXT 7,6 6 6,9
+PAL 3
+
+ROOM h
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,l,b,b,30,b,b,l,s,s,s,s,s
+s,s,s,s,l,c,c,2z,c,c,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,0,0,0,0,0,l,s,s,s,s,s
+s,s,s,s,l,l,l,l,l,l,l,s,s,s,s,s
+s,s,s,s,n,b,b,b,b,b,p,s,s,s,s,s
+s,s,s,s,m,c,c,c,c,c,o,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s
+NAME closet 3
+ITM 1b 7,5
+EXT 7,6 6 10,9
+PAL 3
+
 TIL 10
 11111111
 11111111
@@ -902,6 +1004,7 @@ TIL 15
 11110011
 11110001
 NAME frames TL
+COL 15
 
 TIL 16
 00000000
@@ -913,6 +1016,7 @@ TIL 16
 11111110
 11111110
 NAME frames TR
+COL 15
 
 TIL 17
 11111111
@@ -924,6 +1028,7 @@ TIL 17
 01110000
 00100000
 NAME frames BL
+COL 15
 BGC 5
 
 TIL 18
@@ -936,6 +1041,7 @@ TIL 18
 00011100
 00001000
 NAME frames BR
+COL 15
 BGC 5
 
 TIL 19
@@ -956,9 +1062,9 @@ TIL 20
 00000000
 11111111
 11111111
-11111111
-11111111
-11111111
+00011000
+00011000
+00011000
 NAME bed2 TM
 WAL true
 COL 6
@@ -967,11 +1073,11 @@ TIL 21
 00000100
 00000100
 00000100
+00000100
 00000111
-00000111
-00000111
-00000111
-00000111
+00000110
+00000110
+00000110
 NAME bed2 TL
 WAL true
 COL 6
@@ -980,11 +1086,11 @@ TIL 22
 00100000
 00100000
 00100000
+00100000
 11100000
-11100000
-11100000
-11100000
-11100000
+01100000
+01100000
+01100000
 NAME bed2 TR
 WAL true
 COL 6
@@ -1534,11 +1640,11 @@ TIL 1b
 01010010
 01111111
 01000000
-01011110
-01011110
+01000000
+01000000
 01000000
 NAME bed TL
-COL 2
+COL 18
 
 TIL 1c
 00000000
@@ -1550,7 +1656,7 @@ TIL 1c
 10000000
 10000000
 NAME bed TR
-COL 2
+COL 18
 
 TIL 1d
 01000000
@@ -1562,7 +1668,7 @@ TIL 1d
 01111111
 01100001
 NAME bed BL
-COL 2
+COL 18
 BGC 5
 
 TIL 1e
@@ -1575,7 +1681,7 @@ TIL 1e
 10000000
 10000000
 NAME bed BR
-COL 2
+COL 18
 
 TIL 1f
 10000000
@@ -2242,6 +2348,178 @@ NAME ladder up B2
 COL 16
 BGC *
 
+TIL 3h
+00000000
+00000000
+00000000
+01010000
+00000000
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00000000
+00000000
+01010000
+00000000
+00000000
+00000000
+NAME cat eyes
+COL 17
+
+TIL 3j
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+00000000
+11111111
+NAME picB
+BGC 4
+
+TIL 3k
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+00000000
+11111111
+NAME picBL
+BGC 4
+
+TIL 3l
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+00000000
+11111111
+NAME picBR
+BGC 4
+
+TIL 3m
+00000001
+00000011
+00000011
+00000001
+00000001
+00000011
+00000011
+00000001
+NAME picML2
+COL 10
+BGC 4
+
+TIL 3n
+10000000
+11000000
+11000000
+10000000
+10000000
+11000000
+11000000
+10000000
+NAME picMR2
+COL 10
+BGC 4
+
+TIL 3o
+00000000
+00000000
+00000000
+10000000
+11000000
+11100011
+11111111
+11111111
+NAME picML
+COL 20
+BGC 21
+
+TIL 3p
+00000000
+00000000
+00000001
+00000111
+00001111
+10011111
+11111111
+11111111
+NAME picMR
+COL 20
+BGC 21
+
+TIL 3q
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picTL
+BGC 21
+
+TIL 3r
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picTR
+BGC 21
+
+TIL 3s
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+10011001
+00000000
+NAME blank back 1
+COL 3
+BGC 10
+
+TIL 3t
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+11111100
+11111100
+NAME blank back 2
+COL 3
+BGC 10
+
+TIL 3u
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+00111111
+00111111
+NAME blank back 3
+COL 3
+BGC 10
+
 SPR A
 00000000
 00001100
@@ -2260,7 +2538,7 @@ SPR A
 00011000
 00100100
 00110110
-POS 1 7,8
+POS 5 8,9
 BGC *
 
 SPR b
@@ -2273,6 +2551,7 @@ SPR b
 01000001
 01000110
 NAME SP pics TL
+DLG d
 POS 0 7,3
 BGC *
 
@@ -2329,6 +2608,7 @@ SPR f
 NAME SP frames TL
 DLG 1
 POS 0 10,5
+COL 8
 BGC *
 
 SPR g
@@ -2343,6 +2623,7 @@ SPR g
 NAME SP frames TR
 DLG 1
 POS 0 11,5
+COL 8
 BGC *
 
 SPR h
@@ -2357,6 +2638,7 @@ SPR h
 NAME SP frames BL
 DLG 1
 POS 0 10,6
+COL 8
 BGC *
 
 SPR i
@@ -2371,6 +2653,7 @@ SPR i
 NAME SP frames BR
 DLG 1
 POS 0 11,6
+COL 8
 BGC *
 
 SPR j
@@ -2456,6 +2739,214 @@ SPR o
 NAME tower entry R
 DLG 6
 POS 6 9,5
+BGC *
+
+SPR p
+00110100
+00011100
+00111000
+01110000
+00101000
+00100000
+00010000
+00000000
+>
+00101100
+01111000
+00110100
+00011000
+00001100
+00001000
+00010000
+00000000
+NAME servantB ghost
+DLG 7
+POS 5 10,9
+BGC *
+
+SPR q
+00000000
+00000000
+00000000
+00001100
+00001100
+01000000
+00011000
+00111101
+>
+00000000
+00000000
+00000000
+00110000
+00110000
+00000010
+00011000
+10111100
+NAME servantT ghost
+DLG 7
+POS 5 10,8
+BGC *
+
+SPR r
+00110100
+00011100
+00111000
+01110000
+00101000
+00100000
+00010000
+00000000
+>
+00101100
+01111000
+00110100
+00011000
+00001100
+00001000
+00010000
+00000000
+NAME parentB ghost
+DLG 8
+POS 8 4,7
+BGC *
+
+SPR s
+00000000
+00000000
+00000000
+00001100
+00001100
+01000000
+00011000
+00111101
+>
+00000000
+00000000
+00000000
+00110000
+00110000
+00000010
+00011000
+10111100
+NAME parentT ghost
+DLG 8
+POS 8 4,6
+BGC *
+
+SPR t
+00110100
+00011100
+00111000
+01110000
+00101000
+00100000
+00010000
+00000000
+>
+00101100
+01111000
+00110100
+00011000
+00001100
+00001000
+00010000
+00000000
+NAME chefB ghost
+DLG a
+POS d 5,8
+BGC *
+
+SPR u
+00000000
+00000000
+00000000
+00001100
+00001100
+01000000
+00011000
+00111101
+>
+00000000
+00000000
+00000000
+00110000
+00110000
+00000010
+00011000
+10111100
+NAME chefT ghost
+DLG a
+POS d 5,7
+BGC *
+
+SPR v
+00110100
+00011100
+00111000
+01110000
+00101000
+00100000
+00010000
+00000000
+>
+00101100
+01111000
+00110100
+00011000
+00001100
+00001000
+00010000
+00000000
+NAME gardenerB ghost
+DLG 9
+POS 9 12,8
+BGC *
+
+SPR w
+00000000
+00000000
+00000000
+00001100
+00001100
+01000000
+00011000
+00111101
+>
+00000000
+00000000
+00000000
+00110000
+00110000
+00000010
+00011000
+10111100
+NAME gardenerT ghost
+DLG 9
+POS 9 12,7
+BGC *
+
+SPR x
+00000000
+01010000
+01110010
+00100101
+01110001
+00111010
+00111100
+00101110
+>
+00000000
+00000000
+01010010
+01110101
+00100001
+01111010
+00111100
+01001110
+NAME cat
+DLG b
+POS g 9,8
+COL 19
 BGC *
 
 ITM 2
@@ -2692,6 +3183,145 @@ NAME fenceout 5
 COL 14
 BGC *
 
+ITM 20
+00000001
+00000000
+00001110
+01001110
+00001110
+00000000
+00001000
+00000000
+NAME picTL It
+COL 17
+BGC *
+
+ITM 21
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000110
+00000110
+NAME picTR It
+BGC *
+
+ITM 22
+00000011
+00000011
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picBL2 It
+COL 10
+BGC *
+
+ITM 23
+11000000
+11000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picBR2 It
+COL 10
+BGC *
+
+ITM 24
+00000001
+00000011
+00000011
+00000001
+00000001
+00000011
+00000011
+00000001
+NAME picTML2 It
+COL 10
+BGC *
+
+ITM 25
+10000000
+11000000
+11000000
+10000000
+10000000
+11000000
+11000000
+10000000
+NAME picTMR2 It
+COL 10
+BGC *
+
+ITM 26
+00000000
+00100000
+01100000
+00010000
+00001010
+00000111
+00001111
+00000111
+>
+00100000
+01100000
+00010000
+00001010
+00000111
+00001111
+00000111
+00000000
+NAME shovel
+DLG c
+
+ITM 27
+00000000
+00000000
+01111011
+10111100
+10111000
+01111000
+00111000
+00000000
+>
+00000000
+01111011
+10111100
+10111000
+01111000
+00111000
+00000000
+00000000
+NAME wateringcan
+DLG e
+
+ITM 28
+00000000
+00000010
+00000100
+00001000
+01010000
+10100000
+01010000
+00100000
+>
+00000010
+00000100
+00001000
+01010000
+10100000
+01010000
+00100000
+00000000
+NAME broom
+
 ITM a
 11100111
 11100111
@@ -2823,39 +3453,42 @@ COL 12
 BGC *
 
 ITM k
-00000100
-00000100
-00000100
+00000111
+00000111
 00000111
 00000100
-00000101
-00000101
-00000101
+00000100
+00000100
+00000100
+00000100
 NAME bed2 TL2
+COL 18
 BGC *
 
 ITM l
-00100000
-00100000
-00100000
+11100000
+11100000
 11100000
 00100000
-10100000
-10100000
-10100000
+00100000
+00100000
+00100000
+00100000
 NAME bed2 TR2
+COL 18
 BGC *
 
 ITM m
-10011001
-00000000
+11111111
 11111111
 00000000
 00000000
-11100111
-11100111
-11100111
+00000000
+00000000
+00000000
+00000000
 NAME bed2 TM2
+COL 18
 BGC *
 
 ITM n
@@ -2868,6 +3501,7 @@ ITM n
 00000100
 00000100
 NAME bed2 ML2
+COL 18
 BGC *
 
 ITM o
@@ -2880,6 +3514,7 @@ ITM o
 00100000
 00100000
 NAME bed2 MR2
+COL 18
 BGC *
 
 ITM p
@@ -2892,6 +3527,7 @@ ITM p
 00000110
 00000000
 NAME bed2 BL2
+COL 18
 BGC *
 
 ITM q
@@ -2904,6 +3540,7 @@ ITM q
 01100000
 00000000
 NAME bed2 BL2
+COL 18
 BGC *
 
 ITM r
@@ -2916,6 +3553,7 @@ ITM r
 00000000
 00000000
 NAME bed2 BM2
+COL 18
 BGC *
 
 ITM s
@@ -2928,6 +3566,7 @@ ITM s
 00000000
 00000011
 NAME bed2 TL2 2
+COL 18
 BGC *
 
 ITM t
@@ -2940,6 +3579,7 @@ ITM t
 00000000
 11000000
 NAME bed2 TR2 2
+COL 18
 BGC *
 
 ITM u
@@ -2952,6 +3592,7 @@ ITM u
 00000000
 01100110
 NAME bed2 TM2 2
+COL 18
 BGC *
 
 ITM v
@@ -3251,6 +3892,108 @@ ITM 1r
 NAME ladder up B
 BGC *
 
+ITM 1s
+00000000
+00000000
+00000000
+00000000
+00000000
+00000111
+00011100
+00111100
+NAME arch1
+COL 1
+BGC *
+
+ITM 1t
+00000000
+00000000
+00000000
+00000111
+11111111
+11111111
+10011001
+00000000
+NAME arch2
+COL 1
+BGC *
+
+ITM 1u
+00000000
+00000000
+00000000
+11100000
+11111111
+11111111
+10011001
+00000000
+NAME arch3
+COL 1
+BGC *
+
+ITM 1v
+00000000
+00000000
+00000000
+00000000
+00000000
+11100000
+00111000
+00111100
+NAME arch4
+COL 1
+BGC *
+
+ITM 1w
+11111111
+01100110
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picBL It
+COL 10
+BGC *
+
+ITM 1x
+11111111
+01100110
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME picBR It
+COL 10
+BGC *
+
+ITM 1y
+00011000
+00011000
+00000010
+00111001
+01010100
+00010000
+00101001
+00101001
+NAME picML It
+BGC *
+
+ITM 1z
+11000000
+11000111
+00001010
+11001010
+10100010
+10000101
+01000101
+01000101
+NAME picMR It
+BGC *
+
 DLG 0
 """
 Indecipherable words and smashed pictures line the wall.{pg}Is it your own hand?{pg}{
@@ -3258,9 +4001,9 @@ Indecipherable words and smashed pictures line the wall.{pg}Is it your own hand?
     You put the framed memory up on the wall amid the clutter.{pg}You're closer, now. 
     Closer to... Something.
   - pics >= 1 ?
-    Come back when your pictures have been framed.
+    Come back when you have framed your clues.
   - else ?
-    Come back when you have framed pictures.
+    Come back when you have framed clues.
 }
 """
 NAME pics wall dialog
@@ -3317,6 +4060,113 @@ DLG 6
 """
 NAME tower entry R
 
+DLG 7
+"""
+{
+  - servant == 0 ?
+    ...{wvy}Ooooh{/wvy}... {shk}Uhh{/shk}...{pg}...Am I... Am I a... {wvy}ghost{/wvy}?{pg}...I {wvy}remember{/wvy}... I was a servant here?{pg}...But... Now I'm {shk}dead{/shk}...{pg}...{pg}{wvy}You have found a clue!{/wvy} Frame it and put it up on the clue wall{servant = 1}{pics = pics + 1}
+}
+"""
+NAME servant ghost dialog
+
+DLG 8
+"""
+{
+  - parent == 0 ?
+    ...Oh! ... Hello there, my {wvy}sweet child{/wvy}.{pg}...How are you doing? {wvy}Remember{/wvy} what {shk}That Doctor{/shk} said...{pg}...I didn't like {shk}That Doctor{/shk} one bit.{pg}Saying you had a {shk}"condition"{/shk} and all...{pg}...You don't... {wvy}remember{/wvy}?{pg}Here, take this... Maybe it'll help {wvy}jog your memory{/wvy}.{pg}She hands you a photograph, the corner speckled with blood.{pg}You and your mom forcing smiles in a sterile, white office.{pg}...{pg}{wvy}You have found a clue!{/wvy} Frame it and put it up on the clue wall!{parent = 1}{pics = pics + 1}{pg}
+}{
+  - parent == 1 ?
+    Come back when you have placed the clue on the wall!
+}{
+  - parent == 2 ?
+    You: No... no. This isn’t real. I killed you...{pg}You: I didn’t mean to... I jus-- I had a manic episode and then-- and then everything went blur.{pg}Mom: I know...{pg}Mom: ...and I forgive you. Your dad and I did all we could to find you the help you solely needed. But the hour was already too late.{pg}You: I’m so sorry Mom. I jus.. I can’t fathom this right now. I can’t. I can’t.  I-- {pg}Mom: Listen to me.{pg}Mom: There’s one thing I need you to do before I go. Let me see my family once more. {pg}{parent = 3}
+}{
+  - parent == 3 ?
+    {
+      - family_pic == false ?
+        Mom: There is a picture of the family up in the tower. I seem to have misplaced the key, though. Maybe the cat got it?
+      - else ?
+        {parent = 4}
+    }
+}{
+  - parent == 4 ?
+    Mom: I can't thank you enough my dear.
+}
+"""
+NAME parent ghost dialog
+
+DLG 9
+"""
+{
+  - garderner_items == 2 ?
+    Looks like you have found some of my tools!{pg}These tools will be useful for gardening...{pg}{wvy}The ghost has given you a clue!{/wvy} Frame it and put it up on the clue wall!{gardener = 1}{pics = pics + 1}{pg}
+}{
+  - gardener == 0 ?
+        
+        ...{wvy}Oh{/wvy}, I {wvy}remember{/wvy} you...{pg}When you were {wvy}just a wee sprout{/wvy} you'd help me in the gardens...{pg}...If only I had my {wvy}shovel and waterin' can{/wvy}...{pg}It'd be like {wvy}relivin' the good ol' times{/wvy}.
+}{
+  - gardener == 1 ?
+    Come back when you have placed the clue on the wall!
+}{
+  - gardener == 2 ?
+    You: Gardener...Gardener: Yes, young master?You: It's my fault. It's my fault that you're dead. It's my fault that everyone's dead.{pg}You: I -- I never meant for this to happen. You know this.{pg}You: I wish I could undo everything.Gardener: Yet, you cannot.You: How can I ever repay you?Gardener: Tis a sorrowful thing, to see my gardens neglected. Might I impose upon one final favor?{pg}You: What is it?{gardener = 3}
+}{
+  - gardener == 3 ?
+    {
+      - planted_flower == false ?
+        Gardener: Go on now, plant the flower from the master bedroom in that bare bit o' soil.
+      - else ?
+        {gardener = 4}
+    }
+}{
+  - gardener == 4 ?
+    Gardener: Ohh, thank you young master. You remind me of old times.
+}
+"""
+NAME gardener ghost dialog
+
+DLG a
+"""
+{
+  - chef == 0 ?
+    ...{wvy}Hello?{/wvy}... Do I know you...{pg}...Yes...Yes, I {wvy}remember{/wvy} now...{pg}When you were just a tot you'd come and ask for {wvy}extra sweets{/wvy}...{pg}See?... I've got this {wvy}recipe{/wvy} here...{pg}You can keep it, {wvy}if you want{/wvy}.{pg}He hands you a note, a recipe for a sweet treat.{pg}A drop of blood smears the ink.{pg}...{pg}{wvy}You have found a clue!{/wvy} Frame it and put it up on the clue wall!{chef = 1}{pics = pics + 1}{pg}
+}{
+  - chef == 1 ?
+    Come back when you have placed the clue on the wall!
+}{
+  - chef == 2 ?
+    You: I'm so sorry chefChef: Sorry for what?You: I didn't mean to hurt you. I didn't mean to hurt anyone{pg}Chef: You're the one that killed me?You: Yes... I remembered. I remembered having a manic episode. It's all coming back to me in a flood.{pg}You: --every mistake, every action I wish I could've taken back.{pg}Chef: I am good as dead already.{pg}Chef: The past is fixed, and no hand may turn its course.{pg}Chef: I fear your temper may grow into something stronger...{pg}{chef = 3}
+}{
+  - chef == 3 ?
+    {
+      - made_food == false ?
+        Chef: Might I suggest you prepare yourself a sweet treat to calm your mind?
+      - else ?
+        You have taken a bite out of the treat.{chef = 4}
+    }
+}{
+  - chef == 4 ?
+    Chef: That should calm you down!
+}
+"""
+NAME chef ghost dialog
+
+DLG b
+{wvy}*Meow*{/wvy}
+NAME cat dialog
+
+DLG c
+An old shovel, worn down from love and usage.{garderner_items = garderner_items + 1}
+NAME shovel dialog
+
+DLG d
+
+NAME SP pics TL dialog
+
+DLG e
+Hmmm.... I think a ghost was looking for this.{garderner_items = garderner_items + 1}
+NAME wateringcan dialog
+
 VAR frames
 0
 
@@ -3334,6 +4184,30 @@ VAR masterKey
 
 VAR towerKey
 1
+
+VAR parent
+0
+
+VAR family_pic
+false
+
+VAR gardener
+0
+
+VAR garderner_items
+0
+
+VAR planted_flower
+false
+
+VAR chef
+0
+
+VAR made_food
+false
+
+VAR servant
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
